@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  background-color: #0E0C13;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  height: auto;
+  position: relative;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #26A69A;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: calc(100vw - 17px);
+}
+
+#mainContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#main {
+  width: 65vw;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media screen and (max-width: 900px) {
+  #main {
+    width: 85vw;
+  }
+}
+
+#main h1#title {
+  font-size: 48px;
+  font-weight: 300;
+  color: #26A69A;
+  margin: 20px 0 10px 0;
+}
+
+#main p#description {
+  font-size: 24px;
+  font-weight: 300;
+  margin: auto;
+  width: 75%;
+}
+
+#main p#description a {
+  color: #26A69A;
+  position: relative;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
+}
+
+#main p#description a:hover {
+  color: #2bbbad;
+}
+
+#main i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  cursor: pointer;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
+}
+
+#main i:hover {
+  color: #2bbbad;
+}
+
+#main #survey-form {
+  margin-top: 40px;
+  position: relative;
+}
+
+#main #survey-form .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr;
+      grid-template-columns: 1fr 1.2fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  #main #survey-form .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .1fr 1fr;
+        grid-template-rows: .1fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+#main #survey-form p {
+  font-size: 18px;
+}
+
+#main #survey-form .input-field {
+  width: 85%;
+  margin: 20px auto 20px auto;
+}
+
+#main #survey-form .input-field #dropdown {
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  padding: 0;
+}
+
+#main #survey-form .textInput {
+  width: 75%;
+}
+
+#main #survey-form .question {
+  text-align: right;
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  #main #survey-form .question {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+#main #survey-form .textAlignLeft {
+  text-align: left;
+}
+
+#main #survey-form .textAlignLeft label {
+  color: #000000;
+}
+
+#main #survey-form #thanks {
+  margin-top: 40px;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height .5s linear;
+  transition: max-height .5s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #survey-form #thanks img {
+  display: block;
+  margin: auto;
+  margin: 20px auto 20px auto;
+}
+
+#main #survey-form #thanks #another {
+  margin: auto auto 20px auto;
+}
+
+#main #survey-form #thanks #courtesyLink {
+  color: #26A69A;
+  position: relative;
+  -webkit-transition: color .1s linear;
+  transition: color .1s linear;
+}
+
+#main #survey-form #thanks #courtesyLink:hover {
+  color: #2bbbad;
+}
+/*# sourceMappingURL=styles.css.map */

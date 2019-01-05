@@ -1,0 +1,173 @@
+$primaryColour: #26A69A;
+$primaryColourHover: lighten($primaryColour, 5%); // #2BBBAD
+$backgroundColour: #0E0C13;
+
+* {
+    padding: 0; margin: 0; border: 0;
+}
+
+html {
+    background-color: $backgroundColour;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    height: auto;
+    position: relative;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $primaryColour;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: calc(100vw - 17px); // View width minus scrollbar.
+}
+
+#mainContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#main {
+    width: 65vw;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255,255,255,.85);
+
+    @media screen and (max-width: 900px) {
+        width: 85vw
+    }
+
+    h1#title {
+        font-size: 48px;
+        font-weight: 300;
+        color: $primaryColour;
+        margin: 20px 0 10px 0;
+    }
+    p#description {
+        font-size: 24px;
+        font-weight: 300;
+        margin: auto;
+        width: 75%;
+        a {
+            color: $primaryColour;
+            position: relative; // Allows interaction behind particles canvas.
+            &:hover {
+                color: $primaryColourHover;
+            }
+            transition: color .1s linear;
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 36px;
+        cursor: pointer;
+        transition: color .1s linear;
+        &:hover {
+            color: $primaryColourHover
+        }
+    }
+
+    #survey-form {
+        margin-top: 40px;
+        position: relative;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+            align-items: center;
+            @media screen and (max-width: 600px) {
+               grid-template-columns: 1fr;
+               grid-template-rows: .1fr 1fr;
+               grid-gap: 0;
+            }
+            
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .input-field {
+            width: 85%;
+            margin: 20px auto 20px auto;
+
+            #dropdown {
+                display: block;
+                position: absolute;
+                height: 0;
+                width: 0;
+                padding: 0;
+            }
+
+        }
+
+        .textInput {
+            width: 75%;
+        }
+    
+        .question {
+            text-align: right;
+            margin-left: 25%;
+            @media screen and (max-width: 600px) {
+                text-align: center;
+                margin-left: 0;
+                margin-top: 40px;
+             }
+        }
+
+        .textAlignLeft {
+            text-align: left;
+            label {
+                color: #000000;
+            }
+        }
+
+        #thanks {
+            margin-top: 40px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height .5s linear;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                display: block;
+                margin: auto;
+                margin: 20px auto 20px auto;
+            }
+
+            #another {
+                margin: auto auto 20px auto;
+            }
+
+            #courtesyLink {
+                color: $primaryColour;
+                position: relative; // Allows interaction behind particles canvas.
+                &:hover {
+                    color: $primaryColourHover
+                }
+                transition: color .1s linear;
+            }
+
+        }
+
+    }
+    
+}
